@@ -1,5 +1,9 @@
 ## Visual Studio dark color theme for [Insomnia](http://insomnia.rest)
 
+The purpose of this theme is to focus more on the looks of Visual Studio's dark theme, rather than VS Code's. 
+
+Feel free to send any feedback/suggestions!
+
 ### Installation
 
 1. In Insomnia, go to **Application > Preferences**
