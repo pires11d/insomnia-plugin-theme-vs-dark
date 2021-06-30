@@ -1,6 +1,6 @@
 'use strict';
 const colors = {
-    red: '#ff5370',
+    red: '#e41300',
     orange: '#CE9178',
     yellow: '#d8d7a1',
     green: '#49c2a8',
@@ -53,7 +53,7 @@ const base = {
             }
 
             .editor .cm-atom, .editor .cm-number {
-                color: ${colors.foreground};
+                color: ${colors.cyan};
             }
 
             .editor .cm-string {
@@ -65,16 +65,16 @@ const base = {
             }
 
             .editor .cm-attribute {
-                color: ${colors.blue};
+                color: ${colors.cyan};
             }
 
             .editor .cm-bracket {
-                color: ${colors.cyan};
+                color: ${colors.blue};
             }
 
             .editor .cm-meta {
                 font-style: italic;
-                color: ${colors.foreground};
+                color: ${colors.pink};
             }
 
             .editor .cm-variable {
@@ -86,7 +86,7 @@ const base = {
             success: colors.green,
             notice: colors.yellow,
             warning: colors.orange,
-            danger: colors.cyan,
+            danger: colors.blue,
             surprise: colors.blue,
             info: colors.blue
         },
