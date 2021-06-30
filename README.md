@@ -1,13 +1,13 @@
-### [Insomnia](http://insomnia.rest)
+## Visual Studio dark color theme for [Insomnia](http://insomnia.rest)
 
-#### Install
+### Installation
 
 1. In Insomnia, go to **Application > Preferences**
 2. Click on **Plugins**
 3. Paste `insomnia-plugin-theme-vs-dark` into the package name field
 4. Click on **Install Plugin**
 
-#### Activating theme
+### Activation
 
 1. Go to **Application > Preferences**
 2. Click on **Themes**
