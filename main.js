@@ -11,19 +11,18 @@ const colors = {
     cyan: '#9CDCFE',
     pink: '#f590e7',
     purple: '#9563b7',
+    lightGray: '#f0f0f0',
+    lightGray2: '#cccccc',
     gray: '#848484',
+    gray2: '#333333',
+    darkGray: '#252526',
+    darkerGray: '#1E1E1E',
 
-    darkBackground: '#1E1E1E',
-    background: '#242424',
-    lightBackground: '#383838',
-    foreground: '#f8f8f2',
-    selection: 'rgba(36, 76, 124, 0.2)',
+    foreground: '#f8f8f8',
+    selection: 'rgba(37, 37, 38, 0.0)',
 };
 
 /*
-    highlight legend
-    ----------------
-
     default: controls text color when no other colors apply. (tab labels, timeline, side bar labels)
 
     xxs: text box backgrounds, and tab exponent borders
@@ -83,8 +82,8 @@ const base = {
             }
             `,
         background: {
-            default: colors.lightBackground,
-            success: colors.pink,
+            default: colors.darkGray,
+            success: colors.green,
             notice: colors.yellow,
             warning: colors.orange,
             danger: colors.cyan,
@@ -95,47 +94,63 @@ const base = {
             default: colors.foreground
         },
         highlight: {
-            default: colors.foreground,
+            default: colors.lightGray,
             xl: colors.gray
         },
         styles: {}
     }
 };
 
-// hyperlinks
-base.theme.styles.link = {
-    foreground: {
-        default: colors.purple
-    }
-};
-
 // dialog
 base.theme.styles.dialog = {
     background: {
-        default: colors.foreground,
+        default: colors.lightGray,
     },
     foreground: {
-        default: colors.background,
+        default: colors.darkerGray,
     },
     highlight: {
-        default: colors.background,
-        md: colors.blue,
+        default: colors.darkerGray,
+        md: colors.lightGray2,
+    }
+};
+base.theme.styles.dialogHeader = {
+    background: {
+        default: colors.gray2,
+        md: colors.gray2,
+    },
+    foreground: {
+        default: colors.foreground,
+    },
+    highlight: {
+        md: colors.blue2,
+    }
+};
+base.theme.styles.dialogTab = {
+    background: {
+        default: colors.gray,
+    },
+    foreground: {
+        default: colors.darkerGray,
+    },
+    highlight: {
+        default: colors.foreground,
     }
 };
 
 // side bar
 base.theme.styles.sidebar = {
     background: {
-        default: colors.background
+        default: colors.darkGray,
     },
     highlight: {
-        xs: colors.blue2, // background for active item and scrollbar
-        md: colors.selection // scrollbar handle itself
+        xs: colors.darkBlue, // background for active item and scrollbar
+        md: colors.selection // scrollbar handle
     }
 };
 base.theme.styles.sidebarHeader = {
     background: {
-        default: colors.background
+        default: colors.darkGray
     },
     highlight: {
         default: colors.purple,
@@ -143,20 +158,29 @@ base.theme.styles.sidebarHeader = {
         md: colors.purple
     }
 };
+base.theme.styles.sidebarList = {
+    background: {
+        success: colors.green,
+        danger: colors.red,
+    },
+    foreground: {
+        default: colors.foreground,
+    },
+};
 
 // header bar above request details
 base.theme.styles.pane = {
     background: {
-        default: colors.darkBackground
+        default: colors.darkerGray
     },
     highlight: {
-        xs: colors.background,
-        md: colors.lightBackground
+        xs: colors.darkGray,
+        md: colors.darkGray
     }
 };
 base.theme.styles.paneHeader = {
     background: {
-        default: colors.background,
+        default: colors.darkGray,
         success: colors.darkGreen,
         notice: colors.yellow,
         warning: colors.orange,
@@ -170,6 +194,13 @@ base.theme.styles.paneHeader = {
 base.theme.styles.transparentOverlay = {
     background: {
         default: colors.selection
+    }
+};
+
+// hyperlinks
+base.theme.styles.link = {
+    foreground: {
+        default: colors.purple
     }
 };
 

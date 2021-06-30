@@ -1,0 +1,36 @@
+{
+  "name": "insomnia-plugin-theme-vs-dark",
+  "version": "1.0.0",
+  "private": false,
+  "insomnia": {
+    "name": "theme-vs-dark",
+    "description": ""
+  },
+  "main": "main.js",
+  "description": "The purpose of this theme is to focus more on the looks of Visual Studio's dark theme, rather than VS Code's.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pires11d/insomnia-plugin-theme-vs-dark.git"
+  },
+  "keywords": [
+    "vs",
+    "vscode",
+    "code",
+    "visual",
+    "studio",
+    "dark",
+    "color",
+    "theme",
+    "insomnia",
+    "plugin"
+  ],
+  "author": "Lucas J Pires",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pires11d/insomnia-plugin-theme-vs-dark/issues"
+  },
+  "homepage": "https://github.com/pires11d/insomnia-plugin-theme-vs-dark#readme"
+}
