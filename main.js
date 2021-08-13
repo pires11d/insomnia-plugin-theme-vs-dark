@@ -175,7 +175,7 @@ base.theme.styles.pane = {
     },
     highlight: {
         xs: colors.darkGray,
-        md: colors.darkGray
+        md: colors.gray
     }
 };
 base.theme.styles.paneHeader = {
